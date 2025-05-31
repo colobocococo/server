@@ -1,0 +1,10 @@
+FROM postgres:latest
+
+ENV POSTGRES_USER=student
+ENV POSTGRES_PASSWORD=student
+ENV POSTGRES_DB=mydb
+
+EXPOSE 5434
+
+#docker build -t my_postgres .
+#docker run -d --name pg_custom -p 5434:5432 my_postgres
